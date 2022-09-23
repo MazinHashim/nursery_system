@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 23, 2022 at 07:04 PM
--- Server version: 10.3.16-MariaDB
--- PHP Version: 7.3.7
+-- Generation Time: Sep 23, 2022 at 07:52 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -139,13 +138,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `pass`, `phone`, `isVerified`, `rule`, `address`, `work_hours`, `price`, `certif`, `img`, `accepted`, `nur_id`, `sitter_id`) VALUES
-(29, 'Alaa', 'Ø×œ]À†äscpè$‡', 'io¾øtþA‚ä\"bYÂ;OÓ', 'O‹ÜÜUÔú?êK‡¾J¬à6', 1, 'Admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (34, 'Mazin', 'G}ôVKS›+:\r›üï¡—Ò', '„ Y¡¨OGãw O<CŠU', 'Ë\nBkø¸\\ß·m×Baô6', 1, 'Nursery Manager', NULL, NULL, NULL, NULL, NULL, NULL, 38, NULL),
-(38, 'Sami', 'RPÇ&“np¹ª6¾\\hà¶·', '/wÿ¶»ÕawŽfGjËX£', '“ñsÝû—Ãˆ¥6u×ÜK', 1, 'Nursery Manager', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(40, 'Sara', '.Dß\\Þ…~ÎJe™\0\"P', 'û´·™\0\"2æˆæ§ô>', 'a²6òUr•;îx	­Ç', 1, 'Baby Sitter', 'Maka', '08:05am - 04:30pm', 2000, '605ed0c78c6fd8.26930957.pdf', NULL, NULL, NULL, NULL),
+(38, 'Sami', 'RPÇ&“np¹ª6¾\\hà¶·', '/wÿ¶»ÕawŽfGjËX£', '“ñsÝû—Ãˆ¥6u×ÜK', 0, 'Nursery Manager', NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL),
+(40, 'Sara', '.Dß\\Þ…~ÎJe™\0\"P', 'û´·™\0\"2æˆæ§ô>', 'a²6òUr•;îx	­Ç', 0, 'Baby Sitter', 'Maka', '08:05am - 04:30pm', 2000, '605ed0c78c6fd8.26930957.pdf', NULL, 0, NULL, NULL),
 (42, 'Ibrahim', '7có\n‹¾òi)<+ßC]Þ4ê þ…¹¥‚¶ÿmÞ', '§˜R=IÇúŒ?Ë²–Ÿœ9', '`R\r÷\nîÎGˆÛ”8\"', 1, 'Parent', 'Jada', NULL, NULL, NULL, '', 0, NULL, 40),
-(43, 'Ibrahim', ']ÄßÃÍ(&Ž£ÍÅ‘@²', ' í+AÁ>¨zÙr1h³†žÚ', 'ªfÒzEP]:ÑÔ¶€ò', 0, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(44, 'Ahmed', ' ‰3°¢Š\0±=ÅÓ8\nXå', '_:OáÆçS2¦ýª®', '3Þd3É™ØÕ\"ù¬', 1, 'Nursery Manager', NULL, NULL, NULL, NULL, '6059b1ec0bd9d9.54048462.jpg', NULL, 34, NULL);
+(44, 'Ahmed', ' ‰3°¢Š\0±=ÅÓ8\nXå', '_:OáÆçS2¦ýª®', '3Þd3É™ØÕ\"ù¬', 1, 'Nursery Manager', NULL, NULL, NULL, NULL, '6059b1ec0bd9d9.54048462.jpg', NULL, 34, NULL),
+(46, 'Mazin', 'm‚<÷âaäÍ¾qõÚŒã', 'Bþ›\0†jÀJty.½O;X', '_föù]-š}Î·`\'H@üÖ', 1, 'Admin', NULL, NULL, NULL, NULL, '632df22270ce64.61829733.jpg', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -246,7 +244,7 @@ ALTER TABLE `reports`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `user_rating`
